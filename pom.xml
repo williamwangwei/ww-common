@@ -29,5 +29,10 @@
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 		</dependency>
+		<!-- bean 工具类 -->
+		<dependency>
+		  <groupId>commons-beanutils</groupId>
+		  <artifactId>commons-beanutils</artifactId>
+		</dependency>
   </dependencies>
 </project>

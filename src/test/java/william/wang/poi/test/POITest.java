@@ -24,8 +24,8 @@ public class POITest {
 	@Test
 	public void testRead() {
 		try {
-			//WorkbookFactory可以自动根据文档的类型打开一个excel
-			Workbook wb = WorkbookFactory.create(new File("d:/test/poi/11.xls"));
+			//WorkbookFactory可以自动根据文档的类型打开一个excel	C:\Users\王伟\Desktop\yyh(9C4E369DC1B4)/华瑞银行自定义科目.xls
+			Workbook wb = WorkbookFactory.create(new File("C:/Users/王伟/Desktop/yyh(9C4E369DC1B4)/华瑞银行自定义科目.xls"));
 			//获取excel中的某一个数据表
 			Sheet sheet = wb.getSheetAt(0);
 			//获取数据表中的某一行
@@ -66,7 +66,7 @@ public class POITest {
 	@Test
 	public void testList01() {
 		try {
-			Workbook wb = WorkbookFactory.create(new File("d:/test/poi/11.xls"));
+			Workbook wb = WorkbookFactory.create(new File("C:/Users/王伟/Desktop/yyh(9C4E369DC1B4)/华瑞银行自定义科目.xls"));
 			Sheet sheet = wb.getSheetAt(0);
 			//获取一共多少行
 			System.out.println(sheet.getLastRowNum());
@@ -90,7 +90,8 @@ public class POITest {
 	@Test
 	public void testList02() {
 		try {
-			Workbook wb = WorkbookFactory.create(new File("d:/test/poi/11.xls"));
+			Workbook wb = WorkbookFactory.create(new File("C:/Users/王伟/Desktop/yyh(9C4E369DC1B4)/华瑞银行自定义科目.xls"));
+			System.out.println("sheet 共有sheet数量："+wb.getNumberOfSheets());
 			Sheet sheet = wb.getSheetAt(0);
 			//也支持增强for循环的方式
 			/**
