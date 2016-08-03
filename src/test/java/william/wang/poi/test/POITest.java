@@ -63,7 +63,7 @@ public class POITest {
 		return o;
 	}
 	
-	@Test
+	
 	public void testList01() {
 		try {
 			Workbook wb = WorkbookFactory.create(new File("C:/Users/王伟/Desktop/yyh(9C4E369DC1B4)/华瑞银行自定义科目.xls"));
